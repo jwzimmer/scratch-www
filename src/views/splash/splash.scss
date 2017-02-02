@@ -1,5 +1,13 @@
 @import "../../frameless";
 
+#view {
+    padding: 0;
+}
+
+.inner.mod-splash {
+    margin-top: 20px;
+}
+
 .splash {
     .splash-header {
         display: flex;
@@ -33,13 +41,19 @@
         }
     }
 
-    .teacher-banner {
-        margin-top: -20px;
-    }
-
     .box {
         margin-bottom: 20px;
     }
+}
+
+.modal-content.mod-confirmation {
+    width: 31.25rem;
+}
+
+.modal-content-iframe.mod-confirmation {
+    border-radius: 1rem;
+    width: 31.25rem;
+    min-height: 20.625rem;
 }
 
 //4 columns
@@ -54,6 +68,15 @@
             }
         }
     }
+
+    .modal-content.mod-confirmation {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .modal-content-iframe.mod-confirmation {
+        border-radius: 0;
+    }
 }
 
 //6 columns
@@ -67,6 +90,16 @@
                 width: $cols6;
             }
         }
+    }
+
+    .modal-content.mod-confirmation {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .modal-content-iframe.mod-confirmation {
+        border-radius: 0;
+        width: $tablet - 1;
     }
 }
 
